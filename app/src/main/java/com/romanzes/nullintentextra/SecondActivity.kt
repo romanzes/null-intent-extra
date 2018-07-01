@@ -10,7 +10,7 @@ class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
-        val text = intent.getStringExtra(EXTRA_TEXT)
-        textResult.text = getString(R.string.text_result, text)
+        val text: FormData = intent.getParcelableExtra(EXTRA_TEXT)
+        textResult.text = getString(R.string.text_result, text.enteredText)
     }
 }

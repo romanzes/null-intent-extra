@@ -10,9 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         button.setOnClickListener {
+            val formData = FormData(editText.text.toString())
             startActivity(
                     Intent(this, SecondActivity::class.java)
-                            .also { it.putExtra(EXTRA_TEXT, editText.text.toString()) }
+                            .also { it.putExtra(EXTRA_TEXT, formData) }
             )
         }
     }
