@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Null Intent Extra</string>
+    <string name="edit_text_hint">Enter some text</string>
+    <string name="button_title">Go</string>
+    <string name="text_result">The text was: %s</string>
+</resources>
